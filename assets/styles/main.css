@@ -1,0 +1,18 @@
+/* General */
+body {font-size:16px;}
+a { text-decoration:none; }
+
+/* Header */
+.logo { background:url('/assets/images/as-logo.svg') left center no-repeat; background-size: contain; text-indent:-100vw; display:block; width:10em; height:4em; }
+
+/* Navigation */
+.main-menu { text-align:right; }
+.main-menu ul { margin:0; padding:0; }
+  .main-menu ul li { list-style:none; display:inline-block; font-family:'Helvetica', 'Helvetica Neue', Arial, sans-serif; }
+  .main-menu ul li a { color:#333; padding:0.5em 1em; display:block; }
+  .main-menu ul li a:hover { color:#000; background:#eee; }
+
+/* 760w */
+@media screen and (min-width:48rem) {
+  .site-header { display:flex; }
+}
