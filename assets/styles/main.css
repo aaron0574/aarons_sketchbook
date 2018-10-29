@@ -3,7 +3,8 @@ body {font-size:16px;}
 a { text-decoration:none; }
 
 /* Header */
-.logo { background:url('/assets/images/as-logo.svg') left center no-repeat; background-size: contain; text-indent:-100vw; display:block; width:10em; height:4em; }
+.site-header { border-bottom:1px solid #ccc; }
+.logo { background:url('/assets/images/as-logo.svg') left center no-repeat; background-size: contain; text-indent:-100vw; display:block; width:11em; height:4.5em; margin: 0 0 1em; }
 
 /* Navigation */
 .main-menu { text-align:right; }
@@ -15,4 +16,6 @@ a { text-decoration:none; }
 /* 760w */
 @media screen and (min-width:48rem) {
   .site-header { display:flex; }
+  .logo-container { flex-grow:1; }
+  .main-menu { flex-grow:5; }
 }
