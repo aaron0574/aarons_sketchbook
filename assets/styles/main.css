@@ -2,7 +2,7 @@
 
 /* General */
 html { margin:0; padding:0; background:#a2e52c; }
-body {font-size:16px; margin:0; padding:0; background:#fff; min-height:100vh; }
+body { font-family: 'Source Sans Pro', sans-serif; font-size:16px; line-height:1.5em; margin:0; padding:0; background:#fff; min-height:100vh; }
 img { max-width:100%; }
 h1, h2, h3, h4, h5, h6 { font-family: 'Source Sans Pro', sans-serif; }
 p, li { max-width:75rem; }
@@ -25,15 +25,19 @@ a { text-decoration:none; color:#a2e52c; }
     .wrapper { padding:1em; max-width:90em; margin:0 auto; overflow:hidden; }
 
     /* Home */
-    .home-intro { font-family:'Source Sans Pro', sans-serif; font-size:2em; font-weight:700; }
+    .home-intro { font-family:'Source Sans Pro', sans-serif; font-size:2em; line-height:1.125em; font-weight:700; }
 
     /* Work */
-      .work-grid { display:flex; flex-flow:row wrap; margin:0 -1rem; }
-        .work-item { width:calc(50% - 1rem); margin:0 0.5rem 1rem; position:relative; overflow:hidden; }
-        .work-title { color:#333; }
-        .work-image { display:block; transition:transform 0.35s ease-in-out; }
-          .work-item:hover .work-image { transform:scale(1.02); }
+    .work-filter { margin:0 0 2em; padding:0; }
+      .work-filter li { display:inline-block; list-style:none; margin-right:1em; text-transform:uppercase; letter-spacing:2px; }
+      .work-filter li a { color:#333; }
+      .work-filter li a:hover, .work-filter li a.active { color:#a2e52c; }
 
+    .work-grid { display:flex; flex-flow:row wrap; margin:0 -1rem; }
+      .work-item { width:calc(50% - 1rem); margin:0 0.5rem 1rem; position:relative; overflow:hidden; }
+      .work-title { color:#333; }
+      .work-image { display:block; transition:all 0.35s ease-in-out; }
+        .work-item:hover .work-image { transform:scale(1.02); }
 }
 
 /* 760w */
@@ -52,9 +56,13 @@ a { text-decoration:none; color:#a2e52c; }
   /* Home */
 
   /* Work */
-  .work-item { width:calc(33.33% - 1rem); }
-  .work-title { position:absolute; top:50%; left:0; right:0; text-align:center; opacity:0; transition:opacity 0.35s ease-in-out; }
+  .work-page .work-image { float:right; width:50%; margin-left:2em; }
+  .work-item { width:calc(33.33% - 1rem); background-color:#a2e52c; }
+  .work-title { font-weight:300; font-size:2.5em; position:absolute; top:50%; left:0; right:0; transform:translateY(-50%); text-align:center; margin:0; opacity:0; transition:opacity 0.35s ease-in-out; }
     .work-item:hover .work-title { opacity:1; }
+    .work-item:hover .work-image { opacity:0.5; }
+
+
 }
 
 /* 960w */
