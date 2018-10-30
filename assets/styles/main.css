@@ -1,21 +1,78 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,900');
+
 /* General */
-body {font-size:16px;}
+html { margin:0; padding:0; }
+body {font-size:16px; margin:0; padding:0; }
+img { max-width:100%; }
+h1, h2, h3, h4, h5, h6 { font-family: 'Source Sans Pro', sans-serif; }
+p, li { max-width:75rem; }
 a { text-decoration:none; }
 
 /* Header */
-.site-header { border-bottom:1px solid #ccc; }
+.site-header {}
 .logo { background:url('/assets/images/as-logo.svg') left center no-repeat; background-size: contain; text-indent:-100vw; display:block; width:11em; height:4.5em; margin: 0 0 1em; }
 
 /* Navigation */
 .main-menu { text-align:right; }
 .main-menu ul { margin:0; padding:0; }
-  .main-menu ul li { list-style:none; display:inline-block; font-family:'Helvetica', 'Helvetica Neue', Arial, sans-serif; }
+  .main-menu ul li { list-style:none; display:inline-block; font-family:'Source Sans Pro', sans-serif; }
   .main-menu ul li a { color:#333; padding:0.5em 1em; display:block; }
   .main-menu ul li a:hover { color:#000; background:#eee; }
 
+@media screen {
+    /* General */
+    .wrapper { padding:1em; max-width:90em; margin:0 auto; overflow:hidden; }
+
+    /* Home */
+    .home-intro { font-family:'Source Sans Pro', sans-serif; font-size:2em; font-weight:700; }
+
+    /* Work */
+      .work-grid { display:flex; flex-flow:row wrap; margin:0 -1rem; }
+        .work-item { width:calc(50% - 1rem); margin:0 0.5rem 1rem; position:relative; overflow:hidden; }
+        .work-title { color:#f00; }
+        .work-image { display:block; transition:transform 0.35s ease-in-out; }
+          .work-item:hover .work-image { transform:scale(1.02); }
+
+}
+
 /* 760w */
 @media screen and (min-width:48rem) {
+  /* General */
+  .wrapper { padding:2rem; }
+
+  /* Header */
   .site-header { display:flex; }
   .logo-container { flex-grow:1; }
+
+  /* Navigation */
   .main-menu { flex-grow:5; }
+
+  /* Home */
+
+  /* Work */
+  .work-item { width:calc(33.33% - 1rem); }
+  .work-title { position:absolute; top:50%; left:0; right:0; text-align:center; opacity:0; transition:opacity 0.35s ease-in-out; }
+    .work-item:hover .work-title { opacity:1; }
+}
+
+/* 960w */
+@media screen and (min-width:60rem) {
+  /* Home */
+  .home-intro { font-size:3.75rem; }
+}
+
+/* 1024w */
+@media screen and (min-width:64rem) {
+  /* Work */
+  .work-item { width:calc(25% - 1rem); }
+}
+
+/* 1200w */
+@media screen and (min-width:75rem) {
+  /* Work */
+}
+
+/* 1440w */
+@media screen and (min-width:90rem) {
+  .wrapper { padding:3rem; }
 }
