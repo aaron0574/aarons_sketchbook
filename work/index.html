@@ -8,6 +8,7 @@
 </head>
 <body>
   <div class="wrapper container">
+		<!-- Header -->
 		<header class="site-header">
 	    <div class="logo-container">
 	      <a href="/" class="logo">Aaron's Sketchbook</a>
@@ -21,54 +22,123 @@
 	      </ul>
 	    </nav>
 	  </header>
+		<!-- End Header -->
 
-		<!-- Sample Work -->
-		<section class="home-work">
-			<div class="work-grid">
-				<!-- Item 1 -->
-				<a href="" class="work-item">
-					<img class="work-image" src="https://via.placeholder.com/500" />
-					<h2 class="work-title">Work Title</h2>
-				</a>
+		<!-- Content -->
+		<div class="site-content">
 
-				<!-- Item 2 -->
-				<a href="" class="work-item">
-					<img class="work-image" src="https://via.placeholder.com/500" />
-					<h2 class="work-title">Work Title</h2>
-				</a>
+			<!-- Sample Work -->
+			<section class="home-work">
+				<div class="work-filter">
+					<button class="filter active" data-filter="*">Show All</button>
+					<button class="filter" data-filter=".animal">Animals</button>
+					<button class="filter" data-filter=".floral">Floral</button>
+					<button class="filter" data-filter=".abstract">Abstract</button>
+				</div>
 
-				<!-- Item 3 -->
-				<a href="" class="work-item">
-					<img class="work-image" src="https://via.placeholder.com/500" />
-					<h2 class="work-title">Work Title</h2>
-				</a>
+				<div class="work-grid">
+					<!-- Item 1 -->
+					<a href="/work/fox/" class="work-item fox animal" >
+						<img class="work-image" src="/assets/images/work/work-fox-thumb.jpg" />
+						<h2 class="work-title">Animal - Fox</h2>
+					</a>
 
-				<!-- Item 4 -->
-				<a href="" class="work-item">
-					<img class="work-image" src="https://via.placeholder.com/500" />
-					<h2 class="work-title">Work Title</h2>
-				</a>
+					<!-- Item 2 -->
+					<a href="/work/hole" class="work-item hole abstract">
+						<img class="work-image" src="/assets/images/work/work-hole-thumb.jpg" />
+						<h2 class="work-title">Hole</h2>
+					</a>
 
-				<!-- Item 5 -->
-				<a href="" class="work-item">
-					<img class="work-image" src="https://via.placeholder.com/500" />
-					<h2 class="work-title">Work Title</h2>
-				</a>
+					<!-- Item 3 -->
+					<a href="/work/eyes" class="work-item eyes abstract">
+						<img class="work-image" src="/assets/images/work/work-eyes-thumb.jpg" />
+						<h2 class="work-title">Sketchbook - Eyes</h2>
+					</a>
 
-				<!-- Item 6 -->
-				<a href="" class="work-item">
-					<img class="work-image" src="https://via.placeholder.com/500" />
-					<h2 class="work-title">Work Title</h2>
-				</a>
+					<!-- Item 4 -->
+					<a href="/work/hair" class="work-item hair abstract">
+						<img class="work-image" src="/assets/images/work/work-hair-thumb.jpg" />
+						<h2 class="work-title">Hair</h2>
+					</a>
 
-				<!-- Item 7 -->
-				<a href="" class="work-item">
-					<img class="work-image" src="https://via.placeholder.com/500" />
-					<h2 class="work-title">Work Title</h2>
-				</a>
+					<!-- Item 5 -->
+					<a href="" class="work-item floral">
+						<img class="work-image" src="https://via.placeholder.com/500" />
+						<h2 class="work-title">Work Title</h2>
+					</a>
+
+					<!-- Item 6 -->
+					<a href="" class="work-item animal">
+						<img class="work-image" src="https://via.placeholder.com/500" />
+						<h2 class="work-title">Work Title</h2>
+					</a>
+
+					<!-- Item 7 -->
+					<a href="" class="work-item animal">
+						<img class="work-image" src="https://via.placeholder.com/500" />
+						<h2 class="work-title">Work Title</h2>
+					</a>
+
+					<!-- Item 8 -->
+					<a href="" class="work-item abstract">
+						<img class="work-image" src="https://via.placeholder.com/500" />
+						<h2 class="work-title">Work Title</h2>
+					</a>
+
+					<!-- Item 9 -->
+					<a href="" class="work-item floral">
+						<img class="work-image" src="https://via.placeholder.com/500" />
+						<h2 class="work-title">Work Title</h2>
+					</a>
+
+					<!-- Item 10 -->
+					<a href="" class="work-item animal">
+						<img class="work-image" src="https://via.placeholder.com/500" />
+						<h2 class="work-title">Work Title</h2>
+					</a>
+
+					<!-- Item 11 -->
+					<a href="" class="work-item animal">
+						<img class="work-image" src="https://via.placeholder.com/500" />
+						<h2 class="work-title">Work Title</h2>
+					</a>
+
+					<!-- Item 12 -->
+					<a href="" class="work-item abstract">
+						<img class="work-image" src="https://via.placeholder.com/500" />
+						<h2 class="work-title">Work Title</h2>
+					</a>
+				</div>
+			</section>
+		</div>
+		<!-- End Content -->
+
+		<!-- Footer -->
+		<div class="site-footer">
+			<div class="copyright">
+				<p>Copyright &copy; Aaron's Sketchbook</p>
 			</div>
-		</section>
+			<div class="footer-social">
+				<a href="#" class="social social-instagram">Instagram</a>
+			</div>
+		</div>
+		<!-- End Footer -->
 	</div>
-	<!--<script src="assets/scripts/main.js"></script>-->
+
+	<!-- Script -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="/assets/scripts/isotope.pkgd.min.js"></script>
+	<script type="text/javascript">
+		var $grid = $('.work-grid').isotope({
+			// options
+		});
+		// filter items on button click
+		$('.work-filter').on( 'click', 'button', function() {
+		$('.work-filter button').removeClass('active');
+		$(this).addClass('active');
+		var filterValue = $(this).attr('data-filter');
+		$grid.isotope({ filter: filterValue });
+		});
+	</script>
 </body>
 </html>
