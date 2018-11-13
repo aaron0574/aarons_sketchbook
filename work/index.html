@@ -40,73 +40,103 @@
 					<!-- Item 1 -->
 					<a href="/work/fox/" class="work-item fox floral animal" >
 						<img class="work-image" src="/assets/images/work/work-fox-thumb.jpg" />
-						<h2 class="work-title">Animal - Fox</h2>
+						<div class="work-meta">
+							<h2 class="work-title">The Fox</h2>
+							<p class="work-series"></p>
+						</div>
 					</a>
 
 					<!-- Item 2 -->
 					<a href="/work/hole" class="work-item hole abstract">
 						<img class="work-image" src="/assets/images/work/work-hole-thumb.jpg" />
-						<h2 class="work-title">Hole</h2>
+						<div class="work-meta">
+							<h2 class="work-title">The Hole</h2>
+						</div>
 					</a>
 
 					<!-- Item 3 -->
 					<a href="/work/eyes" class="work-item eyes abstract">
 						<img class="work-image" src="/assets/images/work/work-eyes-thumb.jpg" />
-						<h2 class="work-title">Sketchbook - Eyes</h2>
+						<div class="work-meta">
+							<h2 class="work-title">Sketchbook - Eyes</h2>
+							<p class="work-series"></p>
+						</div>
 					</a>
 
 					<!-- Item 4 -->
 					<a href="/work/hair" class="work-item hair abstract">
 						<img class="work-image" src="/assets/images/work/work-hair-thumb.jpg" />
-						<h2 class="work-title">Hair</h2>
+						<div class="work-meta">
+							<h2 class="work-title">Hair</h2>
+						</div>
 					</a>
 
 					<!-- Item 5 -->
 					<a href="/work/pineapple" class="work-item pineapple abstract">
 						<img class="work-image" src="/assets/images/work/work-pineapple-thumb.jpg" />
-						<h2 class="work-title">Pineapple</h2>
+						<div class="work-meta">
+							<h2 class="work-title">Pineapple</h2>
+						</div>
 					</a>
 
 					<!-- Item 6 -->
-					<a href="/work/shoes" class="work-item shoes floral">
-						<img class="work-image" src="/assets/images/work/work-shoes-thumb.jpg" />
-						<h2 class="work-title">Shoes</h2>
+					<a href="/work/floral-ball-1" class="work-item floral-ball-1 floral">
+						<img class="work-image" src="/assets/images/work/work-floral-1-thumb.jpg" />
+						<div class="work-meta">
+							<h2 class="work-title">Floral Ball #1</h2>
+							<p class="work-series"></p>
+						</div>
 					</a>
 
 					<!-- Item 7 -->
-					<a href="/work/bunny" class="work-item bunny floral animal">
-						<img class="work-image" src="/assets/images/work/work-bunny-thumb.jpg" />
-						<h2 class="work-title">Floppy</h2>
+					<a href="/work/shoes" class="work-item shoes floral">
+						<img class="work-image" src="/assets/images/work/work-shoes-thumb.jpg" />
+						<div class="work-meta">
+							<h2 class="work-title">Shoes</h2>
+						</div>
 					</a>
 
 					<!-- Item 8 -->
-					<a href="/work/monsters" class="work-item monster abstract">
-						<img class="work-image" src="/assets/images/work/work-monsters-thumb.jpg" />
-						<h2 class="work-title">Sketchbook - Monsters</h2>
+					<a href="/work/bunny" class="work-item bunny floral animal">
+						<img class="work-image" src="/assets/images/work/work-bunny-thumb.jpg" />
+						<div class="work-meta">
+							<h2 class="work-title">Floppy</h2>
+							<p class="work-series"></p>
+						</div>
 					</a>
 
 					<!-- Item 9 -->
-					<a href="/work/squirrel" class="work-item squirrel animal abstract">
-						<img class="work-image" src="/assets/images/work/work-squirrel-thumb.jpg" />
-						<h2 class="work-title">Squirrel</h2>
+					<a href="/work/monsters" class="work-item monster abstract">
+						<img class="work-image" src="/assets/images/work/work-monsters-thumb.jpg" />
+						<div class="work-meta">
+							<h2 class="work-title">Sketchbook - Monsters</h2>
+							<p class="work-series"></p>
+						</div>
 					</a>
 
 					<!-- Item 10 -->
-					<a href="/work/floral-ball-1" class="work-item floral-ball-1 floral">
-						<img class="work-image" src="/assets/images/work/work-floral-1-thumb.jpg" />
-						<h2 class="work-title">Floral Ball #1</h2>
+					<a href="/work/squirrel" class="work-item squirrel animal abstract">
+						<img class="work-image" src="/assets/images/work/work-squirrel-thumb.jpg" />
+						<div class="work-meta">
+							<h2 class="work-title">Squirrel</h2>
+						</div>
 					</a>
 
 					<!-- Item 11 -->
 					<a href="" class="work-item Floral">
 						<img class="work-image" src="/assets/images/work/work-bushman-thumb.jpg" />
-						<h2 class="work-title">Bush Man</h2>
+						<div class="work-meta">
+							<h2 class="work-title">Bush Man</h2>
+						</div>
 					</a>
 
 					<!-- Item 12 -->
 					<a href="/work/floral-ball-4" class="work-item floral-ball-4 floral">
 						<img class="work-image" src="/assets/images/work/work-floral-4-thumb.jpg" />
-						<h2 class="work-title">Floral Ball #4</h2>
+						<div class="work-meta">
+							<h2 class="work-title">Floral Ball #4</h2>
+							<p class="work-series"></p>
+						</div>
 					</a>
 				</div>
 			</section>
@@ -129,16 +159,23 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script src="/assets/scripts/isotope.pkgd.min.js"></script>
 	<script type="text/javascript">
-		var $grid = $('.work-grid').isotope({
-			// options
+		$( document ).ready(function() {
+				var $grid = $('.work-grid').isotope({
+				// options
+			});
+			// filter items on button click
+			$('.work-filter').on( 'click', 'button', function() {
+			$('.work-filter button').removeClass('active');
+			$(this).addClass('active');
+			var filterValue = $(this).attr('data-filter');
+			$grid.isotope({ filter: filterValue });
+			});
 		});
-		// filter items on button click
-		$('.work-filter').on( 'click', 'button', function() {
-		$('.work-filter button').removeClass('active');
-		$(this).addClass('active');
-		var filterValue = $(this).attr('data-filter');
-		$grid.isotope({ filter: filterValue });
+
+		$('.nav-toggle').on( 'click', 'button', function() {
+			$('.main-menu').addClass('active');
 		});
+
 	</script>
 </body>
 </html>
