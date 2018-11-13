@@ -28,10 +28,10 @@ a { text-decoration:none; color:#a2e52c; }
       .main-menu ul li a.active::after { content:''; display:block; background:#a2e52c; height:0.2rem; width:100%; margin-top:0.25rem; }
 
     /* Home */
-    .home-intro { font-family:'Source Sans Pro', sans-serif; font-size:2em; line-height:1.125em; font-weight:700; }
-      .home-intro a { text-decoration:none; position:relative; color:#333; }
-      .home-intro a::after { content:''; display:block; position:absolute; left:0; right:0; height:0.5rem; bottom:0; background-color:#a2e52c; }
-      .home-intro a:hover { color:#a2e52c; }
+    .page-intro { font-family:'Source Sans Pro', sans-serif; font-size:2em; line-height:1.125em; font-weight:700; }
+      .page-intro a { text-decoration:none; position:relative; color:#333; }
+      .page-intro a::after { content:''; display:block; position:absolute; left:0; right:0; height:0.5rem; bottom:0; background-color:#a2e52c; }
+      .page-intro a:hover { color:#a2e52c; }
 
     /* Work */
     .work-filter { margin:0 0 2em; padding:0; }
@@ -72,7 +72,7 @@ a { text-decoration:none; color:#a2e52c; }
 /* 960w */
 @media screen and (min-width:60rem) {
   /* Home */
-  .home-intro { font-size:3.75rem; }
+  .page-intro { font-size:3.75rem; }
 }
 
 /* 1024w */
