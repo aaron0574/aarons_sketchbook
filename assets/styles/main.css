@@ -3,7 +3,7 @@
 /* General */
 html { margin:0; padding:0; background:#a2e52c; }
 body { font-family: 'Source Sans Pro', sans-serif; font-size:16px; color:#333; line-height:1.5em; margin:0; padding:0; background:#fff; min-height:100vh; }
-img { max-width:100%; }
+img { max-width:100%; height:auto; }
 h1, h2, h3, h4, h5, h6 { font-family: 'Source Sans Pro', sans-serif; }
 p, li { max-width:75rem; }
 a { text-decoration:none; color:#a2e52c; }
@@ -16,7 +16,8 @@ a { text-decoration:none; color:#a2e52c; }
 @media screen {
     /* General */
     .wrapper { padding:1em; max-width:90em; margin:0 auto; overflow:hidden; }
-    .page-subtitle { color:#63802f; }
+    .page-title { font-size:3em; }
+    .page-subtitle { color:#63802f; font-size:1.25rem; font-weight:300; }
 
     /* Header */
     .site-header { display:flex; justify-content: space-between; margin-bottom:1em; }
@@ -56,6 +57,12 @@ a { text-decoration:none; color:#a2e52c; }
       .work-image { display:block; transition:all 0.35s ease-in-out; }
         .work-item:hover .work-image { transform:scale(1.02); }
 
+    /* Shop */
+    .shop-page .status { color:#63802f; }
+    .shop-page .price { font-size:2em; font-weight:300; }
+
+    .purchase-options { display:flex; justify-content:space-between; }
+    .purchase-options > div { width:50%; }
     /* Footer */
     .social { margin-right:1em; text-decoration:underline; color:#333; }
     .social-instagram::before { content:''; display:inline-block; width:1.125em; height:1.125em; background:url('/assets/images/instagram.svg') center center / contain no-repeat; margin-right:0.25em; vertical-align: text-bottom; }
@@ -84,6 +91,17 @@ a { text-decoration:none; color:#a2e52c; }
     .work-series::after { content:'\2014'; display:inline; margin:0 0.5rem; }
     .work-item:hover .work-meta { opacity:1; }
     .work-item:hover .work-image { opacity:0.35; filter: blur(0.25rem); }
+
+  /* Shop */
+
+  .shop-page .shop { display:flex; flex-flow:row wrap; }
+  .shop-page .shop-image { width:50%; margin-right:2em; }
+  .shop-page .shop-content { width:calc(50% - 2em); }
+
+  .shop-quality { clear:both; display:flex; flex-flow:row wrap; justify-content:space-between; margin:2em 0; }
+    .shop-quality > div { width:calc(25% - 1.25em); }
+  .shop-quality-intro { position:relative; }
+    .shop-quality-intro h2 { position:absolute; left:0; right:0; top:0; padding:1rem; font-size:3.5em; line-height:1.25em; }
 }
 
 /* 960w */
