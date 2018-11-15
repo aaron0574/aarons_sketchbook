@@ -12,6 +12,7 @@ a { text-decoration:none; color:#a2e52c; }
 /* Header */
 .site-header { }
 .logo { background:url('/assets/images/as-logo.svg') left center no-repeat; background-size: contain; text-indent:-999vw; display:block; width:11em; height:4.5em; margin: 0 0 1em; }
+.btn, .more { color:#333; border:1px solid #a2e52c; padding:0.5rem 0.75rem; }
 
 @media screen {
     /* General */
@@ -55,7 +56,8 @@ a { text-decoration:none; color:#a2e52c; }
     .shop-page .price { font-size:2em; font-weight:300; }
 
     .purchase-options { display:flex; justify-content:space-between; }
-    .purchase-options > div { width:50%; }
+      .purchase-option { width:calc(50% - 2.5rem); padding:1rem; border:1px solid transparent; }
+      .purchase-original { border-color:#a2e52c; }
 
     /* Cards */
     .card-grid { display:flex; flex-flow:row wrap; margin:0 -1rem; }
@@ -66,6 +68,7 @@ a { text-decoration:none; color:#a2e52c; }
         .card-item:hover .card-image { transform:scale(1.02); }
 
     /* Footer */
+    .site-footer { clear:both; }
     .social { margin-right:1em; text-decoration:underline; color:#333; }
     .social-instagram::before { content:''; display:inline-block; width:1.125em; height:1.125em; background:url('/assets/images/instagram.svg') center center / contain no-repeat; margin-right:0.25em; vertical-align: text-bottom; }
 }
@@ -95,15 +98,16 @@ a { text-decoration:none; color:#a2e52c; }
     .card-item:hover .card-image { opacity:0.35; filter: blur(0.25rem); }
 
   /* Shop */
-
-  .shop-page .shop { display:flex; flex-flow:row wrap; }
+  .shop-page .site-content { display:flex; flex-flow:row wrap; }
   .shop-page .shop-image { width:50%; margin-right:2em; }
-  .shop-page .shop-content { width:calc(50% - 2em); }
+  .shop-page .shop-details { width:calc(50% - 2em); }
 
   .shop-quality { clear:both; display:flex; flex-flow:row wrap; justify-content:space-between; margin:2em 0; }
     .shop-quality > div { width:calc(25% - 1.25em); }
   .shop-quality-intro { position:relative; }
     .shop-quality-intro h2 { position:absolute; left:0; right:0; top:0; padding:1rem; font-size:3.5em; line-height:1.25em; }
+
+  .shop-item .card-meta { position:static; top:auto; left:auto; right:auto; transform:none; text-align:left; opacity:1; padding:1rem 0 0; }
 }
 
 /* 960w */
@@ -116,6 +120,9 @@ a { text-decoration:none; color:#a2e52c; }
 /* 1024w */
 @media screen and (min-width:64rem) {
   /* Work */
+  .work-filter button { margin-right:1.5em; }
+
+  /* Cards */
   .card-item { width:calc(25% - 1rem); }
   .card-title { font-size:2.5em; }
 }
