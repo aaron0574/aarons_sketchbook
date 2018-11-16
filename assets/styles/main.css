@@ -19,6 +19,7 @@ a { text-decoration:none; color:#a2e52c; }
     .wrapper { padding:1em; max-width:90em; margin:0 auto; overflow:hidden; }
     .page-title { font-size:3em; }
     .page-subtitle { color:#63802f; font-size:1.25rem; font-weight:300; }
+    .price { margin-top:0.25rem; }
 
     /* Header */
     .site-header { display:flex; justify-content: space-between; margin-bottom:1em; }
@@ -64,8 +65,8 @@ a { text-decoration:none; color:#a2e52c; }
       .card-item { width:calc(50% - 1rem); margin:0 0.5rem 1rem; position:relative; overflow:hidden; }
       .card-title { color:#333; font-size:1.5em; line-height:1.125em; font-weight:600; margin-top:0.5rem; margin-bottom:0.25rem; padding-right:1rem; }
       .card-series { color:#333; margin-top:0.125rem; }
-      .card-image { display:block; transition:all 0.35s ease-in-out; }
-        .card-item:hover .card-image { transform:scale(1.02); }
+      .card-image { overflow:hidden; margin:0; }
+        .card-image img { display:block; transition:all 0.35s ease-in-out; }
 
     /* Footer */
     .site-footer { clear:both; }
@@ -95,7 +96,7 @@ a { text-decoration:none; color:#a2e52c; }
     .card-series::before,
     .card-series::after { content:'\2014'; display:inline; margin:0 0.5rem; }
     .card-item:hover .card-meta { opacity:1; }
-    .card-item:hover .card-image { opacity:0.35; filter: blur(0.25rem); }
+    .card-item:hover .card-image img { opacity:0.35; filter: blur(0.25rem); transform:scale(1.02); }
 
   /* Shop */
   .shop-page .site-content { display:flex; flex-flow:row wrap; }
@@ -108,6 +109,7 @@ a { text-decoration:none; color:#a2e52c; }
     .shop-quality-intro h2 { position:absolute; left:0; right:0; top:0; padding:1rem; font-size:3.5em; line-height:1.25em; }
 
   .shop-item .card-meta { position:static; top:auto; left:auto; right:auto; transform:none; text-align:left; opacity:1; padding:1rem 0 0; }
+  .shop-item .card-title { font-size:1.75em; }
 }
 
 /* 960w */
