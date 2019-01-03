@@ -17,6 +17,7 @@
 			<a href="#menu" class="nav-toggle"><span>Menu</span></a>
 
 	    <nav class="main-menu">
+				<div class="nav-close"></div>
 	      <ul>
 	        <li><a class="active" href="/">Home</a></li>
 	        <li><a href="/about">About</a></li>
@@ -129,6 +130,9 @@
 
 		$('.nav-toggle').on( 'click', function() {
 			$('.main-menu').addClass('active');
+		});
+		$('.nav-close').on( 'click', function() {
+			$('.main-menu').removeClass('active');
 		});
 
 	</script>
