@@ -22,6 +22,9 @@ a { text-decoration:none; color:#a2e52c; }
   .btn:hover::after, .more:hover::after { height:4px; width:98%; }
   .btn::selection { background-color:transparent; }
 
+  .btn.btn-icon { padding-left:5rem; }
+  .btn.btn-icon svg { display: block; left: 2.5rem; height: auto; line-height: 0; position: relative; margin: 0; padding: 0; position: absolute; top: 50%; transform: translateY(-50%); z-index: 2; }
+
 @media screen {
     /* General */
     .wrapper { padding:2em 1em; max-width:90em; margin:0 auto; overflow:hidden; }
@@ -116,7 +119,8 @@ a { text-decoration:none; color:#a2e52c; }
   /* Work */
   .work-page .work-image { float:right; width:50%; margin-left:2em; max-width:40em; }
   .card-item { width:calc(33.33% - 1rem); background-color:#fff; }
-  .card-meta { position:absolute; top:50%; left:0; right:0; transform:translateY(-50%); text-align:center; opacity:0; transition:opacity 0.35s ease-in-out; padding:1em; }
+  .card-meta { position:absolute; bottom:1em; left:1em; right:1em; background:#000; transform:translateY(-50%); text-align:center; opacity:0; transition:opacity 0.35s ease-in-out; padding:1em; }
+    .card-title, .card-series { color:#fff; }
     .card-title { font-weight:300; font-size:2em; margin:0; line-height:1.125em; padding-right:0; }
     .card-series::before,
     .card-series::after { content:'\2014'; display:inline; margin:0 0.5rem; }
