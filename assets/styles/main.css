@@ -125,7 +125,7 @@ a { text-decoration:none; color:#a2e52c; }
     .card-series::before,
     .card-series::after { content:'\2014'; display:inline; margin:0 0.5rem; }
     .card-item:hover .card-meta, .card-item:active .card-meta, .card-item:focus .card-meta { opacity:1; }
-    .card-item:hover .card-image img, .card-item:active .card-image img, .card-item:focus .card-image img { opacity:0.35; filter: blur(0.25rem); transform:scale(1.02); }
+    .card-item:hover .card-image img, .card-item:active .card-image img, .card-item:focus .card-image img { opacity:0.35; transform:scale(1.02); }
 
   /* Shop */
   .shop-page .site-content { display:flex; flex-flow:row wrap; }
