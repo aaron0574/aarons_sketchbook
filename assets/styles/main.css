@@ -119,7 +119,7 @@ a { text-decoration:none; color:#a2e52c; }
   /* Work */
   .work-page .work-image { float:right; width:50%; margin-left:2em; max-width:40em; }
   .card-item { width:calc(33.33% - 1rem); background-color:#fff; }
-  .card-meta { position:absolute; bottom:1em; left:1em; right:1em; background:#000; transform:translateY(-50%); text-align:center; opacity:0; transition:opacity 0.35s ease-in-out; padding:1em; }
+  .card-meta { position:absolute; bottom:1em; left:1em; right:1em; background:#000; text-align:center; opacity:0; transition:opacity 0.35s ease-in-out; padding:1em; }
     .card-title, .card-series { color:#fff; }
     .card-title { font-weight:300; font-size:2em; margin:0; line-height:1.125em; padding-right:0; }
     .card-series::before,
