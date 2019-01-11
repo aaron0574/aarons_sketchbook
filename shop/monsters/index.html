@@ -35,13 +35,35 @@
 						<h2>Purchase a Print</h2>
 						<p class="price">$24.99</p>
 						<p class="status">In Stock</p>
-						<p><a class="btn" href="">Buy a Print</a></p>
+						<ul class="purchase-option-list">
+							<li>Dimensions: 8 1/2" x 11"</li>
+							<li>Canon Pro Premium Matte Paper</li>
+							<li>Printed with Chromalife-100+ Ink</li>
+						</ul>
+						<p>
+							<form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+								<input type="hidden" name="cmd" value="_s-xclick">
+								<input type="hidden" name="hosted_button_id" value="FBDVDSBTXTWY8">
+								<div class="btn"><input type="submit" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!" value="Buy a Print"></div>
+								<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+							</form>
+						</p>
 					</div>
 					<div class="purchase-option purchase-original">
 						<h2>Purchase Original</h2>
 						<p class="price">$94.99</p>
-						<p class="status">In Stock</p>
-						<p><a class="btn" href="">Buy Original</a></p>
+						<p class="status">Out of Stock</p>
+						<ul class="purchase-option-list">
+							<li>Dimensions: 9" x 12"</li>
+							<li>Strathmore 300 Bristol Paper</li>
+							<li>Acid-Free / Indian Ink</li>
+						</ul>
+						<form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+							<input type="hidden" name="cmd" value="_s-xclick">
+							<input type="hidden" name="hosted_button_id" value="7ZA3N8CTJZQ5E">
+							<div class="btn"><input type="submit" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!" value="Buy Original"></div>
+							<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+						</form>
 					</div>
 				</div>
 			</div>
@@ -51,7 +73,6 @@
 		<!-- Quality -->
 		<div class="shop-quality">
 			<div class="shop-quality-intro">
-				<img src="https://via.placeholder.com/500x700">
 				<h2>Explore the Details</h2>
 			</div>
 			<div class="shop-material">
@@ -65,7 +86,7 @@
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 			</div>
 			<div class="shop-gaurantee">
-				<img src="https://via.placeholder.com/500x350">
+				<img src="/assets/images/shop/shop-guarantee.jpg">
 				<h3>Aaron's Sketchbook</h3>
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 			</div>

@@ -25,11 +25,24 @@
 					<li><a href="/shop">Shop</a></li>
 	      </ul>
 	    </nav>
+
+			<nav class="secondary-menu">
+				<ul>
+					<li>
+						<form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post" >
+							<input type="hidden" name="cmd" value="_s-xclick">
+							<input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----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-----END PKCS7-----">
+							<input type="submit" border="0" name="submit" value="Cart" alt="PayPal - The safer, easier way to pay online!">
+							<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+						</form>
+					</li>
+				</ul>
+			</nav>
 	  </header>
 		<!-- End Header -->
 
 		<!-- Content -->
-		<div class="site-content">
+		<main class="site-content">
 
 			<!-- Page Intro -->
 			<p class="page-intro">With a pen always on hand, I have a tendency to create a lot of <a href="/work">art</a>. This website gives me a place to put that art.</p>
@@ -106,7 +119,7 @@
 				</div>
 
 				<p>
-					<a class="btn btn-icon btn-eye" href="/work" aria-label="View more artwork"><span>View More</span>
+					<a class="btn btn-icon btn-eye" href="/work" aria-label="View more artwork"><span class="btn-icon-text">View More</span>
 						<span class="eye-track-tl"></span><span class="eye-track-tr"></span>
 						<span class="eye-track-bl"></span><span class="eye-track-br"></span>
 						<svg class="eyeball" xmlns="http://www.w3.org/2000/svg" width="31" height="21" viewBox="0 0 31 21">
@@ -118,7 +131,7 @@
 					</a>
 				</p>
 			</section>
-		</div>
+		</main>
 		<!-- End Content -->
 
 		<!-- Footer -->
