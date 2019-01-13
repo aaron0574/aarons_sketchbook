@@ -23,12 +23,7 @@
 	        <li><a href="/about">About</a></li>
 	        <li><a href="/work">Work</a></li>
 					<li><a href="/shop">Shop</a></li>
-	      </ul>
-	    </nav>
-
-			<nav class="secondary-menu">
-				<ul>
-					<li>
+					<li class="nav-cart">
 						<form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post" >
 							<input type="hidden" name="cmd" value="_s-xclick">
 							<input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----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-----END PKCS7-----">
@@ -36,8 +31,9 @@
 							<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
 						</form>
 					</li>
-				</ul>
-			</nav>
+	      </ul>
+	    </nav>
+
 	  </header>
 		<!-- End Header -->
 
@@ -51,13 +47,14 @@
 			<section class="home-work">
 				<div class="card-grid">
 					<!-- Item 1 -->
-					<a href="/work/fox/" class="card-item fox animal" >
+					<div class="card-item fox animal" >
 						<p class="card-image"><img src="/assets/images/work/work-fox-thumb.jpg" /></p>
 						<div class="card-meta">
 							<h2 class="card-title">The Fox</h2>
 							<p class="card-series">Animal Series</p>
 						</div>
-					</a>
+						<a class="card-link" href="/work/fox">Learn more about the fox</a>
+					</div>
 
 					<!-- Item 2 -->
 					<a href="/work/eyes" class="card-item eyes abstract">
