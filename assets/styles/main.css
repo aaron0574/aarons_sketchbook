@@ -98,7 +98,8 @@ a { text-decoration:none; color:#a2e52c; }
       .page-intro a { text-decoration:none; position:relative; color:#333; }
       .page-intro a::after { content:''; display:block; position:absolute; left:0; right:0; height:0.325rem; bottom:0; background-color:#a2e52c; }
       .page-intro a:hover, .page-intro a:focus { color:#a2e52c; }
-      .page-intro img { display:block; }
+      .page-intro img.error { display:block; margin-bottom:1.5rem; }
+
     /* Work */
     .work-filter { margin:0 0 2em; padding:0; }
       .work-filter button { display:inline-block; margin-right:1em; text-transform:uppercase; letter-spacing:2px; color:#333; border:0; padding:0; font-size:inherit; }
@@ -198,6 +199,7 @@ a { text-decoration:none; color:#a2e52c; }
   /* Intro */
   .page-intro { font-size:3.75rem; margin-top:3.75rem; }
   .page-intro a::after { height:0.5rem; }
+  .page-intro img.error { max-width:55rem; }
 }
 
 /* 1024w */
